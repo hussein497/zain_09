@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example two layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            background-color: #ffffff;
+        }
+        .main-container {
+            border: 5px solid rgb(128, 55, 0);
+            padding: 12px;
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .header {
+            background-color: #FFD700;
+            border: 3px solid #FFA500;
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 12px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 26px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        .content-area {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+            margin-bottom: 12px;
+            width: 100%;
+        }
+        .nav-sidebar {
+            border: 1px solid #000000;
+            flex: 0 0 15%; 
+            padding: 8px;
+            min-height: 220px;
+        }
+        .nav-sidebar a {
+            color: blue;
+            text-decoration: underline;
+            margin-right: 5px;
+            font-size: 14px;
+            display: inline-block;
+        }
+        .main-content {
+            border: 2px solid darkblue;
+            flex: 0 0 45%;
+            padding: 8px;
+            min-height: 220px;
+        }
+        .flag-box {
+            width: 110px;
+            height: 75px;
+            background-color: #32CD32;
+            float: left;
+            margin-right: 8px;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .star {
+            color: white;
+            font-size: 32px;
+            margin-bottom: 4px;
+        }
+        .text-p {
+            margin: 0;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .table-container {
+            border: 2px solid #0000ff;
+            flex: 0 0 37%; 
+            padding: 4px;
+            background-color: #ffffff;
+            overflow-x: auto; 
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #7f7f7f;
+            padding: 4px;
+            font-size: 11px;
+            text-align: left;
+            word-break: break-word; 
+        }
+        th {
+            font-weight: bold;
+            text-align: center;
+        }
+        td:nth-child(1), td:nth-child(2) {
+            text-align: center;
+        }
+        .footer {
+            border: 3px solid #f4b042;
+            background-color: #fffdf9;
+            text-align: center;
+            padding: 12px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <div class="header">
+            <h1>Example two layout</h1>
+        </div>
+
+        <div class="content-area">
+            
+            <div class="nav-sidebar">
+                <a href="#">Home</a> <a href="#">About</a>
+            </div>
+
+            <div class="main-content">
+                <div class="flag-box">
+                    <span class="star">★</span>
+                </div>
+                <p class="text-p">
+                    wani salamey saxibayaal halka waxan idin ku diyaariyay afar qofood listigoada anigu ku dhisay html and css coding wa wax yar oo iska macquul eh adna iskuday waad sameyn karta wasalamu caleykum waraxmatullaaahi wabaraka.
+                </p>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ST ID</th>
+                            <th>ST Tel</th>
+                            <th>ST Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>614450463</td>
+                            <td>hussein mohamed ali</td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>615386868</td>
+                            <td>abdiqafar osman</td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>614039098</td>
+                            <td>abdi,asiis libaan </td>
+                        </tr>
+                        <tr>
+                            <td>004</td>
+                            <td>612220099</td>
+                            <td>ahmed yoola</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            &copy; eng hussein
+        </div>
+
+    </div>
+
+</body>
+</html>
